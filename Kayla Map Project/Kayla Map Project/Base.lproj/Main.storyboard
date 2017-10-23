@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HGk-dR-DdG">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Kayla_Map_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bly-gU-dwe">
+                                <rect key="frame" x="0.0" y="64" width="320" height="293"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Washington DC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Uq-iW-Qtb">
+                                <rect key="frame" x="0.0" y="427" width="119" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRz-vu-IuM">
+                                <rect key="frame" x="135" y="442" width="51" height="30"/>
+                                <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="updateLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kmf-c2-3Ff"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqz-4Z-jsr">
+                                <rect key="frame" x="0.0" y="398" width="121" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="ElO-s3-BsZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bly-gU-dwe" firstAttribute="leading" secondItem="Cqz-4Z-jsr" secondAttribute="leading" id="D3x-7S-fVQ"/>
+                            <constraint firstItem="bly-gU-dwe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="M0p-ej-sAk"/>
+                            <constraint firstItem="Cqz-4Z-jsr" firstAttribute="top" secondItem="bly-gU-dwe" secondAttribute="bottom" constant="41" id="NaZ-2V-uO3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fRz-vu-IuM" secondAttribute="bottom" constant="8" symbolic="YES" id="Ox3-OX-R59"/>
+                            <constraint firstItem="Cqz-4Z-jsr" firstAttribute="leading" secondItem="4Uq-iW-Qtb" secondAttribute="leading" id="P8J-Rj-vTB"/>
+                            <constraint firstItem="bly-gU-dwe" firstAttribute="centerX" secondItem="fRz-vu-IuM" secondAttribute="centerX" id="Y9j-H5-RyY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4Uq-iW-Qtb" secondAttribute="bottom" constant="32" id="auv-dG-MYA"/>
+                            <constraint firstAttribute="trailing" secondItem="bly-gU-dwe" secondAttribute="trailing" id="rwH-ej-6wm"/>
+                            <constraint firstItem="bly-gU-dwe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="s0k-VH-kL5"/>
+                            <constraint firstItem="4Uq-iW-Qtb" firstAttribute="top" secondItem="Cqz-4Z-jsr" secondAttribute="bottom" constant="8" symbolic="YES" id="srY-4k-i0Q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WHL-xr-6jg">
+                        <connections>
+                            <outlet property="titleView" destination="rny-M1-Qm8" id="dOe-iU-stb"/>
+                        </connections>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="locationInfo" destination="4Uq-iW-Qtb" id="CPp-EI-Bvs"/>
+                        <outlet property="mapView" destination="bly-gU-dwe" id="0rf-Fg-AVM"/>
+                        <outlet property="searchBarMap" destination="rny-M1-Qm8" id="V1N-8G-RIM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchBar contentMode="redraw" id="rny-M1-Qm8">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <searchBar contentMode="redraw" id="cyP-Kv-h4F">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+            </objects>
+            <point key="canvasLocation" x="1048.125" y="102.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aFp-LY-ppY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HGk-dR-DdG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mpl-BB-uIO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="UPR-TP-vqq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hsV-Yq-Ygl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="188" y="104"/>
+        </scene>
+    </scenes>
+</document>

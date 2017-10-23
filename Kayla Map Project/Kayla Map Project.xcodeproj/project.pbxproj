@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD3D5F241F92D65D009D5C02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3D5F231F92D65D009D5C02 /* AppDelegate.swift */; };
+		AD3D5F261F92D65D009D5C02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3D5F251F92D65D009D5C02 /* ViewController.swift */; };
+		AD3D5F291F92D65D009D5C02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD3D5F271F92D65D009D5C02 /* Main.storyboard */; };
+		AD3D5F2B1F92D65D009D5C02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD3D5F2A1F92D65D009D5C02 /* Assets.xcassets */; };
+		AD3D5F2E1F92D65D009D5C02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD3D5F2C1F92D65D009D5C02 /* LaunchScreen.storyboard */; };
+		AD3D5F391F92D65D009D5C02 /* Kayla_Map_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3D5F381F92D65D009D5C02 /* Kayla_Map_ProjectTests.swift */; };
+		AD3D5F441F92D65D009D5C02 /* Kayla_Map_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3D5F431F92D65D009D5C02 /* Kayla_Map_ProjectUITests.swift */; };
+		AD3D5F531F998075009D5C02 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3D5F521F998075009D5C02 /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD3D5F351F92D65D009D5C02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD3D5F181F92D65D009D5C02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD3D5F1F1F92D65D009D5C02;
+			remoteInfo = "Kayla Map Project";
+		};
+		AD3D5F401F92D65D009D5C02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD3D5F181F92D65D009D5C02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD3D5F1F1F92D65D009D5C02;
+			remoteInfo = "Kayla Map Project";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD3D5F201F92D65D009D5C02 /* Kayla Map Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kayla Map Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD3D5F231F92D65D009D5C02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD3D5F251F92D65D009D5C02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD3D5F281F92D65D009D5C02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD3D5F2A1F92D65D009D5C02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD3D5F2D1F92D65D009D5C02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD3D5F2F1F92D65D009D5C02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD3D5F341F92D65D009D5C02 /* Kayla Map ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kayla Map ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD3D5F381F92D65D009D5C02 /* Kayla_Map_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kayla_Map_ProjectTests.swift; sourceTree = "<group>"; };
+		AD3D5F3A1F92D65D009D5C02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD3D5F3F1F92D65D009D5C02 /* Kayla Map ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kayla Map ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD3D5F431F92D65D009D5C02 /* Kayla_Map_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kayla_Map_ProjectUITests.swift; sourceTree = "<group>"; };
+		AD3D5F451F92D65D009D5C02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD3D5F521F998075009D5C02 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD3D5F1D1F92D65D009D5C02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD3D5F531F998075009D5C02 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD3D5F311F92D65D009D5C02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD3D5F3C1F92D65D009D5C02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD3D5F171F92D65D009D5C02 = {
+			isa = PBXGroup;
+			children = (
+				AD3D5F221F92D65D009D5C02 /* Kayla Map Project */,
+				AD3D5F371F92D65D009D5C02 /* Kayla Map ProjectTests */,
+				AD3D5F421F92D65D009D5C02 /* Kayla Map ProjectUITests */,
+				AD3D5F211F92D65D009D5C02 /* Products */,
+				AD3D5F511F998075009D5C02 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AD3D5F211F92D65D009D5C02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD3D5F201F92D65D009D5C02 /* Kayla Map Project.app */,
+				AD3D5F341F92D65D009D5C02 /* Kayla Map ProjectTests.xctest */,
+				AD3D5F3F1F92D65D009D5C02 /* Kayla Map ProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD3D5F221F92D65D009D5C02 /* Kayla Map Project */ = {
+			isa = PBXGroup;
+			children = (
+				AD3D5F231F92D65D009D5C02 /* AppDelegate.swift */,
+				AD3D5F251F92D65D009D5C02 /* ViewController.swift */,
+				AD3D5F271F92D65D009D5C02 /* Main.storyboard */,
+				AD3D5F2A1F92D65D009D5C02 /* Assets.xcassets */,
+				AD3D5F2C1F92D65D009D5C02 /* LaunchScreen.storyboard */,
+				AD3D5F2F1F92D65D009D5C02 /* Info.plist */,
+			);
+			path = "Kayla Map Project";
+			sourceTree = "<group>";
+		};
+		AD3D5F371F92D65D009D5C02 /* Kayla Map ProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD3D5F381F92D65D009D5C02 /* Kayla_Map_ProjectTests.swift */,
+				AD3D5F3A1F92D65D009D5C02 /* Info.plist */,
+			);
+			path = "Kayla Map ProjectTests";
+			sourceTree = "<group>";
+		};
+		AD3D5F421F92D65D009D5C02 /* Kayla Map ProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD3D5F431F92D65D009D5C02 /* Kayla_Map_ProjectUITests.swift */,
+				AD3D5F451F92D65D009D5C02 /* Info.plist */,
+			);
+			path = "Kayla Map ProjectUITests";
+			sourceTree = "<group>";
+		};
+		AD3D5F511F998075009D5C02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD3D5F521F998075009D5C02 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD3D5F1F1F92D65D009D5C02 /* Kayla Map Project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD3D5F481F92D65D009D5C02 /* Build configuration list for PBXNativeTarget "Kayla Map Project" */;
+			buildPhases = (
+				AD3D5F1C1F92D65D009D5C02 /* Sources */,
+				AD3D5F1D1F92D65D009D5C02 /* Frameworks */,
+				AD3D5F1E1F92D65D009D5C02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kayla Map Project";
+			productName = "Kayla Map Project";
+			productReference = AD3D5F201F92D65D009D5C02 /* Kayla Map Project.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD3D5F331F92D65D009D5C02 /* Kayla Map ProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD3D5F4B1F92D65D009D5C02 /* Build configuration list for PBXNativeTarget "Kayla Map ProjectTests" */;
+			buildPhases = (
+				AD3D5F301F92D65D009D5C02 /* Sources */,
+				AD3D5F311F92D65D009D5C02 /* Frameworks */,
+				AD3D5F321F92D65D009D5C02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD3D5F361F92D65D009D5C02 /* PBXTargetDependency */,
+			);
+			name = "Kayla Map ProjectTests";
+			productName = "Kayla Map ProjectTests";
+			productReference = AD3D5F341F92D65D009D5C02 /* Kayla Map ProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD3D5F3E1F92D65D009D5C02 /* Kayla Map ProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD3D5F4E1F92D65D009D5C02 /* Build configuration list for PBXNativeTarget "Kayla Map ProjectUITests" */;
+			buildPhases = (
+				AD3D5F3B1F92D65D009D5C02 /* Sources */,
+				AD3D5F3C1F92D65D009D5C02 /* Frameworks */,
+				AD3D5F3D1F92D65D009D5C02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD3D5F411F92D65D009D5C02 /* PBXTargetDependency */,
+			);
+			name = "Kayla Map ProjectUITests";
+			productName = "Kayla Map ProjectUITests";
+			productReference = AD3D5F3F1F92D65D009D5C02 /* Kayla Map ProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD3D5F181F92D65D009D5C02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = LivLoveApp;
+				TargetAttributes = {
+					AD3D5F1F1F92D65D009D5C02 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					AD3D5F331F92D65D009D5C02 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AD3D5F1F1F92D65D009D5C02;
+					};
+					AD3D5F3E1F92D65D009D5C02 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AD3D5F1F1F92D65D009D5C02;
+					};
+				};
+			};
+			buildConfigurationList = AD3D5F1B1F92D65D009D5C02 /* Build configuration list for PBXProject "Kayla Map Project" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD3D5F171F92D65D009D5C02;
+			productRefGroup = AD3D5F211F92D65D009D5C02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD3D5F1F1F92D65D009D5C02 /* Kayla Map Project */,
+				AD3D5F331F92D65D009D5C02 /* Kayla Map ProjectTests */,
+				AD3D5F3E1F92D65D009D5C02 /* Kayla Map ProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD3D5F1E1F92D65D009D5C02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD3D5F2E1F92D65D009D5C02 /* LaunchScreen.storyboard in Resources */,
+				AD3D5F2B1F92D65D009D5C02 /* Assets.xcassets in Resources */,
+				AD3D5F291F92D65D009D5C02 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD3D5F321F92D65D009D5C02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD3D5F3D1F92D65D009D5C02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD3D5F1C1F92D65D009D5C02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD3D5F261F92D65D009D5C02 /* ViewController.swift in Sources */,
+				AD3D5F241F92D65D009D5C02 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD3D5F301F92D65D009D5C02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD3D5F391F92D65D009D5C02 /* Kayla_Map_ProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD3D5F3B1F92D65D009D5C02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD3D5F441F92D65D009D5C02 /* Kayla_Map_ProjectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD3D5F361F92D65D009D5C02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD3D5F1F1F92D65D009D5C02 /* Kayla Map Project */;
+			targetProxy = AD3D5F351F92D65D009D5C02 /* PBXContainerItemProxy */;
+		};
+		AD3D5F411F92D65D009D5C02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD3D5F1F1F92D65D009D5C02 /* Kayla Map Project */;
+			targetProxy = AD3D5F401F92D65D009D5C02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD3D5F271F92D65D009D5C02 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD3D5F281F92D65D009D5C02 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD3D5F2C1F92D65D009D5C02 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD3D5F2D1F92D65D009D5C02 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD3D5F461F92D65D009D5C02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD3D5F471F92D65D009D5C02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD3D5F491F92D65D009D5C02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Kayla Map Project/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LivLoveApp.Kayla-Map-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AD3D5F4A1F92D65D009D5C02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Kayla Map Project/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LivLoveApp.Kayla-Map-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AD3D5F4C1F92D65D009D5C02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Kayla Map ProjectTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LivLoveApp.Kayla-Map-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kayla Map Project.app/Kayla Map Project";
+			};
+			name = Debug;
+		};
+		AD3D5F4D1F92D65D009D5C02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Kayla Map ProjectTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LivLoveApp.Kayla-Map-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kayla Map Project.app/Kayla Map Project";
+			};
+			name = Release;
+		};
+		AD3D5F4F1F92D65D009D5C02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Kayla Map ProjectUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LivLoveApp.Kayla-Map-ProjectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Kayla Map Project";
+			};
+			name = Debug;
+		};
+		AD3D5F501F92D65D009D5C02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Kayla Map ProjectUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LivLoveApp.Kayla-Map-ProjectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Kayla Map Project";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD3D5F1B1F92D65D009D5C02 /* Build configuration list for PBXProject "Kayla Map Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD3D5F461F92D65D009D5C02 /* Debug */,
+				AD3D5F471F92D65D009D5C02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD3D5F481F92D65D009D5C02 /* Build configuration list for PBXNativeTarget "Kayla Map Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD3D5F491F92D65D009D5C02 /* Debug */,
+				AD3D5F4A1F92D65D009D5C02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AD3D5F4B1F92D65D009D5C02 /* Build configuration list for PBXNativeTarget "Kayla Map ProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD3D5F4C1F92D65D009D5C02 /* Debug */,
+				AD3D5F4D1F92D65D009D5C02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AD3D5F4E1F92D65D009D5C02 /* Build configuration list for PBXNativeTarget "Kayla Map ProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD3D5F4F1F92D65D009D5C02 /* Debug */,
+				AD3D5F501F92D65D009D5C02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD3D5F181F92D65D009D5C02 /* Project object */;
+}
